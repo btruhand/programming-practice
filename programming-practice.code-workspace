@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "prep-questions/interview-cake"
+		},
+		{
+			"path": "prep-questions/interviewbit"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "${workspaceFolder}/.direnv/python-3.7.0/bin/python"
+	}
+}

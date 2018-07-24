@@ -1,0 +1,6 @@
+[submodule "prep-questions"]
+	path = prep-questions
+	url = https://github.com/btruhand/prep-questions
+[submodule "random-programming"]
+	path = random-programming
+	url = https://github.com/btruhand/random-programming
