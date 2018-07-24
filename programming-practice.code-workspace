@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "prep-questions/interviewbit"
+		},
+		{
+			"path": "scripts"
 		}
 	],
 	"settings": {
