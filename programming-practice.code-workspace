@@ -8,9 +8,12 @@
 		},
 		{
 			"path": "scripts"
+		},
+		{
+			"path": "libraries"
 		}
 	],
 	"settings": {
-		"python.pythonPath": "${workspaceFolder}/.direnv/python-3.7.0/bin/python"
+		"python.envFile": "${workspaceFolder}/.env"
 	}
 }

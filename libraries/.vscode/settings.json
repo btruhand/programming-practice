@@ -1,0 +1,21 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "files.eol": "\n",
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "python.autoComplete.addBrackets": true,
+	"python.venvPath": "${workspaceFolder}/python/.direnv",
+    "python.unitTest.autoTestDiscoverOnSaveEnabled": true,
+    "python.pythonPath": "${workspaceFolder}/python/.direnv/python-3.7.0/bin/python",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./python/tests",
+        "-p",
+        "*_test.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true
+}
