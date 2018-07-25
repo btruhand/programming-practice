@@ -11,7 +11,8 @@ from collections import OrderedDict, deque
 class AdjacencyGraph:
 	"""AdjacencyGraph class
 
-	The adjacency graph is a weight-less directed graph and can store any `Hashable <https://docs.python.org/3.7/glossary.html>`_ value
+	The adjacency graph is a weight-less directed graph and can store any
+	`Hashable <https://docs.python.org/3.7/glossary.html>`_ value
 
 	Example:
 
@@ -112,20 +113,23 @@ class AdjacencyGraph:
 		"""
 		todoList = deque((vertexOrigin,))
 		retracingPath = dict(((vertex, None) for vertex in self.graph.keys()))
-		parentVertex = vertexOrigin
-		while retracingPath[vertexDestination] is None:
+		while retracingPath[vertexDestination] is None and todoList:
 			vertex = todoList.popleft()
 			neighbours = self.graph[vertex]
-			if retracingPath[vertex] is None:
-				retracingPath[vertex] = parentVertex
-			parentVertex = vertex
+			for neighbour in neighbours:
+				if retracingPath[neighbour] is None:
+					retracingPath[neighbour] = vertex
 			todoList.extend(neighbours)
 
 		retracingVertex = vertexDestination
-		shortestPath = []
+		shortestPath = [retracingVertex]
 		while retracingVertex != vertexOrigin:
-			shortestPath.append(retracingVertex)
 			retracingVertex = retracingPath[retracingVertex]
+			shortestPath.append(retracingVertex)
+
+			if retracingVertex is None:
+				# short circuit, path cannot be found
+				return []
 
 		shortestPath.reverse()
 		return shortestPath

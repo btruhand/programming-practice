@@ -1,3 +1,4 @@
 .direnv
 *.swp
 __pycache__
+.ropeproject
