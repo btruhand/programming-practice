@@ -11,9 +11,20 @@
 		},
 		{
 			"path": "libraries"
+		},
+		{
+			"path": "random-programming"
 		}
 	],
 	"settings": {
-		"python.envFile": "${workspaceFolder}/.env"
-	}
+		"python.envFile": "${workspaceFolder}/.env",
+		"editor.tabSize": 4,
+		"editor.insertSpaces": false,
+		"files.eol": "\n",
+		"editor.trimAutoWhitespace": true,
+		"files.trimTrailingWhitespace": true,
+		"python.autoComplete.addBrackets": true,
+		"python.venvPath": "${workspaceFolder}/python/.direnv",
+		"python.unitTest.autoTestDiscoverOnSaveEnabled": true,
+		"python.pythonPath": "${workspaceFolder}/python/.direnv/python-3.7.0/bin/python",
 }
