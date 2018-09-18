@@ -22,7 +22,6 @@
 		"editor.insertSpaces": false,
 		"files.eol": "\n",
 		"editor.trimAutoWhitespace": true,
-		"files.trimTrailingWhitespace": true,
 		"python.autoComplete.addBrackets": true,
 		"python.venvPath": "${workspaceFolder}/python/.direnv",
 		"python.unitTest.autoTestDiscoverOnSaveEnabled": true,
